@@ -1,5 +1,5 @@
 //atividade 01
-/*for(var i = 0; i <= 10; i++){
+for(var i = 0; i <= 10; i++){
     console.log(i)
 }
 
@@ -74,7 +74,7 @@ console.log(`Apalavra ${palavra} tem ${contador} vogais`)
 
 for(var i = 3; i <= 30; i+=3){
     console.log(i)
-}*/
+}
 
 
 //Desafio
