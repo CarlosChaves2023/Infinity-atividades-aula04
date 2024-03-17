@@ -1,5 +1,5 @@
 //atividade 01
-for(var i = 0; i <= 10; i++){
+/*for(var i = 0; i <= 10; i++){
     console.log(i)
 }
 
@@ -74,4 +74,36 @@ console.log(`Apalavra ${palavra} tem ${contador} vogais`)
 
 for(var i = 3; i <= 30; i+=3){
     console.log(i)
+}*/
+
+
+//Desafio
+while(true){
+    var choice = prompt(`Vamos jogar o dado, vai dar Par ou Ímpar?`).toLowerCase()
+    var num = Math.round(Math.random() * 10)
+
+    if (num >= 1 && num <= 6){
+        console.log(`Resultado: ${num}`)
+    }
+    console.log(`Você escolheu:`, choice)
+
+    if(num % 2 == 0 && choice == 'par'){
+        console.log(`Deu par, você acertou.`)
+    } else if(num % 2 == 0 && choice == 'impar'){
+        console.log(`Deu par, você errou.`)
+    } else if(num % 2 == 1 && choice == 'impar'){
+        console.log(`Deu ímpar, você acertou.`)
+    } else {
+        console.log(`Deu ímpar, você errou.`)
+    }
+    
+    
+    var continuar = prompt(`deseja continuar?
+    [1] Sim
+    [2] Não`)
+
+    if(continuar == 2){
+        break
+    }
+    
 }
